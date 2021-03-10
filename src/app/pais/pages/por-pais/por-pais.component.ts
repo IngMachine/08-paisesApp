@@ -31,4 +31,9 @@ export class PorPaisComponent {
     }
   }
 
+  sugerencias( termino: string): void{
+    this.hayError = false;
+    // TODO: crear sugerencias.
+  }
+
 }
