@@ -16,8 +16,9 @@ export class PorPaisComponent {
 
   constructor( private paisService: PaisService) { }
 
-  buscar(): void {
+  buscar( termino: string ): void {
     this.hayError = false;
+    this.termino = termino;
     if ( this.termino.trim().length > 0 ){
       this.paisService.BuscarPais( this.termino )
           .subscribe( paises => {
